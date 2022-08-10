@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Assignment (1)</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="pdfcontainer p-5 bg-white boxshadow m-3">
+                <div class="double-border p-3">
+                    <div class="row">
+                        <div class="col-12  text-center">
+                            <h1 class="fw-bold"> Assignment 1
+                            </h1>
+                        </div>
+                    </div>
+                    <!-- Question ONE -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+                            1- Write a program that allow to user enter number then print it
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="prtoutput"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Input: 5
+                                    </div>
+                                    <div class="col-12">
+                                        Output: 5
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(1): <span id="QoneOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End:: Question ONE -->
+
+                    <!-- Question two -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+                            2 - Write a program that take number from user then print yes if that number can divide by 3 and 4 otherwise print no
+                            <div class="text-danger px-2 instructions">
+                                This field cant be empty & it accepts only numbers *
+                            </div>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="checkdivisonbtn"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example1
+                                    </div>
+                                    <div class="col-12 ">
+                                        Input: 12 <span class="text-success"> Output Yes </span>
+                                    </div>
+                                    <div class="col-12 text-danger">
+                                        Example 2
+                                    </div>
+                                    <div class="col-12 ">
+                                        Input: 9 <span class="text-success"> Output No </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(2): <span id="QtwoOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End:: Question two -->
+
+
+
+                    <!-- Question three -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+                            3- Write a program that allows the user to insert 2 integers then print the max
+                            <div class="text-danger px-2 instructions">
+                                This field cant be empty & it accepts only numbers *
+                            </div>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="checkmaximumbtn"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example1
+                                    </div>
+                                    <div class="col-12 ">
+                                        Input: 3 5 <span class="text-success"> Output 5 </span>
+                                    </div>
+                                    <div class="col-12 text-danger">
+                                        Example 2
+                                    </div>
+                                    <div class="col-12 ">
+                                        Input: 10 7 <span class="text-success"> Output 10 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(3): <span id="QthreeOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End:: Question three -->
+
+
+
+                    <!-- Question four -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+                            4- Write a program that allows the user to insert an integer then print negative if it is negative number otherwise print positive.
+                            <div class="text-danger px-2 instructions">
+                                This field cant be empty & it accepts only numbers *
+                            </div>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="checknegativebtn"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example1
+                                    </div>
+                                    <div class="col-12 ">
+                                        Input: -5 <span class="text-success"> output Negative </span>
+                                    </div>
+                                    <div class="col-12 text-danger">
+                                        Example 2
+                                    </div>
+                                    <div class="col-12 ">
+                                        Input: 10 <span class="text-success"> Output Positive </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(4): <span id="QfourOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End:: Question four -->
+
+
+                    <!-- Question Five -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+                            5 - Write a program that take 3 integers from user then print the max element and the min element
+                            <div class="text-danger px-2 instructions">
+                                This field cant be empty & it accepts only numbers *
+                            </div>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="checkmaximumthreenobtn"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example1
+                                    </div>
+                                    <div class="col-12 ">
+                                        Input: 7,8,5 <span class="text-success"> Output max element = 8 , min Element =
+                                            5 </span>
+                                    </div>
+                                    <div class="col-12 text-danger">
+                                        Example 2
+                                    </div>
+                                    <div class="col-12 ">
+                                        Input: 3,6,9 <span class="text-success"> Output max element = 9 , min Element =
+                                            6</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(5): <span id="QfiveOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End:: Question Five -->
+
+
+                    <!-- Question six -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+                            6 - Write a program that allows the user to insert integer number then check If a number is oven or odd
+                            <div class="text-danger px-2 instructions">
+                                This field cant be empty & it accepts only numbers *
+                            </div>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="checkevenbtn"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example1
+                                    </div>
+                                    <div class="col-12 ">
+                                        Input: 8 <span class="text-success"> Output Even</span>
+                                    </div>
+                                    <div class="col-12 text-danger">
+                                        Example 2
+                                    </div>
+                                    <div class="col-12 ">
+                                        Input: 7 <span class="text-success"> Output Odd </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(6): <span id="QsixOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End:: Question six -->
+
+
+                    <!-- Question Seven -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+
+                            7 - Write a program that take character from user then if it is vowel chars (a,e,I,o,u) then print vowel otherwise print consonant
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="checkvowelbtn"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Input: O
+                                    </div>
+                                    <div class="col-12">
+                                        Output: vowel
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(7): <span id="QsevenOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End:: Question Seven -->
+
+
+                    <!-- Question Eight -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+
+                            8- Write a program that allows user to insert integer then print all numbers between 1 to that’s number </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="getnumbersbetweenbtn"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Input: 5
+                                    </div>
+                                    <div class="col-12">
+                                        Output: 1, 2, 3, 4, 5
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(8): <span id="QeightOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End:: Question eight -->
+
+
+                    <!-- Question nine -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+
+                            9 - Write a program that allows user to insert integer then print a multiplication table up to 12. </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="getmultiplybyseqnobtn"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Input: 5
+                                    </div>
+                                    <div class="col-12">
+                                        Output: 5 10 15 20 25 30 35 40 45 50 55 60
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(9): <span id="QnineOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End:: Question nine -->
+
+
+                    <!-- Question ten -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+
+                            10 - Write a program that allows to user to insert number then print all even numbers
+
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="getallevennobtn"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Input: 15
+                                    </div>
+                                    <div class="col-12">
+                                        Output: 2 4 6 8 10 12 14
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(10): <span id="QtenOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End:: Question ten -->
+
+
+
+                    <!-- Question eleven -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+
+                            11- Write a program that take two integers then print the power
+
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="printpowerbtn"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Input: 4 3
+                                    </div>
+                                    <div class="col-12">
+                                        Output: 64
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(11): <span id="QelevenOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End:: Question eleven -->
+
+
+                    <!-- Question twelve -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+
+                            12- Write a program to enter marks of five subjects and calculate total, average and percentage.
+
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="subjectdatabtn"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Input: 95, 76, 85, 90, 89
+                                    </div>
+                                    <div class="col-12">
+                                        Output::-.Total marks = 435, Average Marks =87, Percentage =87
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(12): <span id="QetwelveOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End:: Question twelve -->
+
+
+
+                    <!-- Question 13 -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+
+                            13 - Write a program to input month number and print number of days in that month.
+
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="daysinmonthbtn"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Input: Month No 1
+                                    </div>
+                                    <div class="col-12">
+                                        Output::- Days in Month = 31
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(13): <span id="QthreteenOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End:: Question 13 -->
+
+
+                    <!-- Question 14 -->
+                    <div class="row mb-5">
+                        <!-- Question -->
+                        <div class="col-12 mb-2">
+
+                            14 - Write a program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer, Find percentage and grade
+
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button class="btn btn-outline-primary btn-sm" id="fivesubjectavg"> Try it</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <!-- Example -->
+                                    <div class="col-12 text-danger">
+                                        Example
+                                    </div>
+
+                                </div>
+                                <div class="col-12 mx-2">
+                                    Find percentage and grade Percentage >= 90%:
+                                    <br> Grad A Percentage >= 80%: Grad B
+                                    <br> Percentage >= 70%: Grad C
+                                    <br> Percentage >= 60%: Grad D
+                                    <br> Percentage >= 40%: Grad E
+                                    <br> Percentage 40%: Grad F
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+
+                                    <!-- Aswer -->
+                                    <div class="col-12 text-danger">
+                                        Answer
+                                    </div>
+                                    <div class="col-12 text-success">
+                                        Answer Q(14):
+                                        <br>
+                                        <span id="QfourteenOutput"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- End:: Question 14 -->
+
+
+                    <!-- *********** Switch Cases ************ -->
+                    <div class="row">
+                        <div class="col-12  text-center">
+                            <h2 class="fw-bold text-danger"> ********* Switch Cases **********
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Question 15 -->
+                        <div class="row mb-5">
+                            <!-- Question -->
+                            <div class="col-12 mb-2">
+
+                                15 - Write a program to input month number and print number of days in that month.
+
+                            </div>
+                            <div class="col-12 mb-2">
+                                <button class="btn btn-outline-primary btn-sm" id="daysinmonthswitchbtn"> Try
+                                    it</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <!-- Example -->
+                                        <div class="col-12 text-danger">
+                                            Example
+                                        </div>
+                                        <div class="col-12 text-success">
+                                            Input: Month No 1
+                                        </div>
+                                        <div class="col-12">
+                                            Output::- Days in Month = 31
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+
+                                        <!-- Aswer -->
+                                        <div class="col-12 text-danger">
+                                            Answer
+                                        </div>
+                                        <div class="col-12 text-success">
+                                            Answer Q(15): <span id="QfifteenOutput"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End:: Question 15 -->
+
+
+                        <!-- Question 16 -->
+                        <div class="row mb-5">
+                            <!-- Question -->
+                            <div class="col-12 mb-2">
+
+                                16 - Write a program that take character from user then if it is vowel chars (a,e,I,o,u) then print vowel otherwise print consonant
+                            </div>
+                            <div class="col-12 mb-2">
+                                <button class="btn btn-outline-primary btn-sm" id="checkvowelswitchbtn"> Try it</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <!-- Example -->
+                                        <div class="col-12 text-danger">
+                                            Example
+                                        </div>
+                                        <div class="col-12 text-success">
+                                            Input: O
+                                        </div>
+                                        <div class="col-12">
+                                            Output: vowel
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+
+                                        <!-- Aswer -->
+                                        <div class="col-12 text-danger">
+                                            Answer
+                                        </div>
+                                        <div class="col-12 text-success">
+                                            Answer Q(16): <span id="QsixteenOutput"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End:: Question 16 -->
+
+
+                        <!-- Question 17 -->
+                        <div class="row mb-5">
+                            <!-- Question -->
+                            <div class="col-12 mb-2">
+                                17- Write a program that allows the user to insert 2 integers then print the max
+                                <div class="text-danger px-2 instructions">
+                                    This field cant be empty & it accepts only numbers *
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <button class="btn btn-outline-primary btn-sm" id="checkmaximumswitchbtn"> Try
+                                    it</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <!-- Example -->
+                                        <div class="col-12 text-danger">
+                                            Example1
+                                        </div>
+                                        <div class="col-12 ">
+                                            Input: 3 5 <span class="text-success"> Output 5 </span>
+                                        </div>
+                                        <div class="col-12 text-danger">
+                                            Example 2
+                                        </div>
+                                        <div class="col-12 ">
+                                            Input: 10 7 <span class="text-success"> Output 10 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+
+                                        <!-- Aswer -->
+                                        <div class="col-12 text-danger">
+                                            Answer
+                                        </div>
+                                        <div class="col-12 text-success">
+                                            Answer Q(17): <span id="QseventeenOutput"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End:: Question 17 -->
+
+
+                        <!-- Question eighteen -->
+                        <div class="row mb-5">
+                            <!-- Question -->
+                            <div class="col-12 mb-2">
+                                18 - Write a program that allows the user to insert integer number then check If a number is oven or odd
+                                <div class="text-danger px-2 instructions">
+                                    This field cant be empty & it accepts only numbers *
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <button class="btn btn-outline-primary btn-sm" id="checkevenswitchbtn"> Try it</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <!-- Example -->
+                                        <div class="col-12 text-danger">
+                                            Example1
+                                        </div>
+                                        <div class="col-12 ">
+                                            Input: 8 <span class="text-success"> Output Even</span>
+                                        </div>
+                                        <div class="col-12 text-danger">
+                                            Example 2
+                                        </div>
+                                        <div class="col-12 ">
+                                            Input: 7 <span class="text-success"> Output Odd </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+
+                                        <!-- Aswer -->
+                                        <div class="col-12 text-danger">
+                                            Answer
+                                        </div>
+                                        <div class="col-12 text-success">
+                                            Answer Q(18): <span id="QeighteenOutput"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End:: Question eighteen -->
+
+                        <!-- Question nineteen -->
+                        <div class="row mb-5">
+                            <!-- Question -->
+                            <div class="col-12 mb-2">
+                                19 - Write a program that allows the user to insert an integer then print negative if it is negative number otherwise print positive.
+
+                            </div>
+                            <div class="col-12 mb-2">
+                                <button class="btn btn-outline-primary btn-sm" id="checknegativeswitchbtn"> Try
+                                    it</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <!-- Example -->
+                                        <div class="col-12 text-danger">
+                                            Example1
+                                        </div>
+                                        <div class="col-12 ">
+                                            Input: -5 <span class="text-success"> output Negative </span>
+                                        </div>
+                                        <div class="col-12 text-danger">
+                                            Example 2
+                                        </div>
+                                        <div class="col-12 ">
+                                            Input: 10 <span class="text-success"> Output Positive </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+
+                                        <!-- Aswer -->
+                                        <div class="col-12 text-danger">
+                                            Answer
+                                        </div>
+                                        <div class="col-12 text-success">
+                                            Answer Q(19): <span id="QnineteenOutput"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End:: Question nineteen -->
+
+
+                        <!-- Question 20 -->
+                        <div class="row mb-5">
+                            <!-- Question -->
+                            <div class="col-12 mb-2">
+                                20 - Write a program to create Simple Calculator
+                            </div>
+                            <div class="col-12 mb-2">
+                                <button class="btn btn-outline-primary btn-sm" id="makeacalcbtn"> Try it</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+
+                                        <!-- Aswer -->
+                                        <div class="col-12 text-danger">
+                                            Answer
+                                        </div>
+                                        <div class="col-12 text-success">
+                                            Answer Q(20): <span id="qtwentyanswer"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End:: Question nineteen -->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
